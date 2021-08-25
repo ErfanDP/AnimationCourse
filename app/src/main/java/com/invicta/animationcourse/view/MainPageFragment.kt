@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.invicta.animationcourse.viewModel.MainPageViewModel
 import com.invicta.animationcourse.viewModel.MainViewModel
 import com.invicta.animationcourse.R
+import com.invicta.animationcourse.databinding.FragmentMainPageBinding
 
 class MainPageFragment: Fragment() {
 	private lateinit var  setConstrains : Button
@@ -28,18 +30,18 @@ class MainPageFragment: Fragment() {
 		savedInstanceState: Bundle?
 	): View? {
 		// Inflate the layout for this fragment
-		val view = inflater.inflate(R.layout.fragment_main_page, container, false)
-		
-		initButtons()
-		return view
+		val mainPageBinding = DataBindingUtil
+			.inflate<FragmentMainPageBinding>(layoutInflater,
+											  R.layout.fragment_main_page,
+											  container,
+											  false)
+		mainPageBinding.viewModel = this.viewModel
+		return mainPageBinding.root
 	}
-	private fun initButtons() {
-		setConstrains.setOnClickListener {
+	
+	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+		super.onViewCreated(view, savedInstanceState)
 		
-		}
-		
-		placeHolderAnim.setOnClickListener {
-		}
 	}
 	
 	companion object {
