@@ -1,4 +1,4 @@
-package com.invicta.animationcourse.view
+package com.invicta.animationcourse.view.fragments
 
 import android.os.Bundle
 import android.transition.TransitionManager

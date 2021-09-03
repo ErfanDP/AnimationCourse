@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.invicta.animationcourse.view.fragments.MainPageFragment"
+        android:label="MainPageFragment" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_placeHolderAnimFragment"
+            app:destination="@id/placeHolderAnimFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_constraintSetsAnimFragment"
+            app:destination="@id/constraintSetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeHolderAnimFragment"
+        android:name="com.invicta.animationcourse.view.fragments.PlaceHolderAnimFragment"
+        android:label="fragment_place_holder_anim"
+        tools:layout="@layout/fragment_place_holder_anim" />
+    <fragment
+        android:id="@+id/constraintSetsFragment"
+        android:name="com.invicta.animationcourse.view.fragments.ConstraintSetsAnimFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank_anim" />
+</navigation>

@@ -5,7 +5,7 @@
     android:id="@+id/root_place_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.PlaceHolderAnimFragment" >
+    tools:context=".view.fragments.PlaceHolderAnimFragment" >
 
     <ImageView
         android:id="@+id/image1"
@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
         android:id="@+id/image3"

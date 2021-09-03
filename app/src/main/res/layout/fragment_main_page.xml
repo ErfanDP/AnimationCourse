@@ -12,7 +12,7 @@
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.MainPageFragment">
+        tools:context=".view.fragments.MainPageFragment">
 
         <Button
             android:id="@+id/constraint_sets_button"

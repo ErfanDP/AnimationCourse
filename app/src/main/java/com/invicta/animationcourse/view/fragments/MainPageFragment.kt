@@ -1,11 +1,10 @@
-package com.invicta.animationcourse.view
+package com.invicta.animationcourse.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -15,8 +14,7 @@ import com.invicta.animationcourse.R
 import com.invicta.animationcourse.databinding.FragmentMainPageBinding
 
 class MainPageFragment: Fragment() {
-	private lateinit var  setConstrains : Button
-	private lateinit var placeHolderAnim : Button
+	private lateinit var  mainPageBinding: FragmentMainPageBinding
 	
 	private val activityViewModel by activityViewModels<MainViewModel>()
 	private val viewModel by viewModels<MainPageViewModel>()
@@ -28,24 +26,28 @@ class MainPageFragment: Fragment() {
 	override fun onCreateView(
 		inflater: LayoutInflater, container: ViewGroup?,
 		savedInstanceState: Bundle?
-	): View? {
-		// Inflate the layout for this fragment
-		val mainPageBinding = DataBindingUtil
-			.inflate<FragmentMainPageBinding>(layoutInflater,
-											  R.layout.fragment_main_page,
-											  container,
-											  false)
-		mainPageBinding.viewModel = this.viewModel
+	): View{
+		mainPageBinding = DataBindingUtil.inflate(layoutInflater,
+												  R.layout.fragment_main_page,
+												  container,
+												  false)
+		mainPageBinding.viewModel = viewModel
 		return mainPageBinding.root
 	}
 	
+	
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 		super.onViewCreated(view, savedInstanceState)
-		
+		initObservers()
+	}
+	
+	private fun initObservers() {
+		viewModel.buttonTypeClicked.observe(viewLifecycleOwner) {
+			it.let { activityViewModel.selectItem(it) }
+		}
 	}
 	
 	companion object {
-		
 		fun newInstance() = MainPageFragment()
 	}
 }

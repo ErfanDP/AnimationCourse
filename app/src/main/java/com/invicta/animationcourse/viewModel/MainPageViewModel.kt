@@ -3,9 +3,11 @@ package com.invicta.animationcourse.viewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.invicta.animationcourse.data.ButtonType
+import com.invicta.animationcourse.utils.SingleLiveData
 
 class MainPageViewModel : ViewModel() {
-	val buttonTypeClicked  = MutableLiveData<ButtonType>()
+	val buttonTypeClicked  = SingleLiveData<ButtonType>()
+	
 	fun onPlaceHolderButtonClicked(){
 		buttonTypeClicked.value = ButtonType.PLACEHOLDER
 	}
