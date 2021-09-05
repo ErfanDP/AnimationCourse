@@ -6,4 +6,5 @@
     <string name="constraint_sets">Constraint Sets</string>
     <string name="classic_animation">Classic Animation</string>
     <string name="hallo">HALLO</string>
+    <string name="res_button">ResButton</string>
 </resources>

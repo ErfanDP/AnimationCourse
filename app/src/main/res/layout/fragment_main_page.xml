@@ -19,33 +19,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:onClick="@{() -> viewModel.onConstrainSetButtonClicked()}"
             android:text="@string/constraint_sets"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="@{() -> viewModel.onConstrainSetButtonClicked()}"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/place_holder_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:onClick="@{() -> viewModel.onPlaceHolderButtonClicked()}"
             android:text="@string/place_holder"
             app:layout_constraintEnd_toEndOf="@+id/constraint_sets_button"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraint_sets_button"
-            android:onClick="@{() -> viewModel.onPlaceHolderButtonClicked()}"/>
+            app:layout_constraintTop_toBottomOf="@+id/constraint_sets_button" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/classic_anim_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.onClassicAnimationsButtonClicked()}"
             android:text="@string/classic_animation"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/place_holder_button"
             app:layout_constraintStart_toStartOf="@+id/place_holder_button"
-            app:layout_constraintTop_toBottomOf="@+id/place_holder_button"
-            android:onClick="@{() -> viewModel.onClassicAnimationsButtonClicked()}"/>
+            app:layout_constraintTop_toBottomOf="@+id/place_holder_button" />
+
+        <Button
+            android:id="@+id/res_anim_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.onResourcesAnimationsButtonClicked()}"
+            android:text="@string/res_button"
+            app:layout_constraintEnd_toEndOf="@+id/classic_anim_button"
+            app:layout_constraintStart_toStartOf="@+id/classic_anim_button"
+            app:layout_constraintTop_toBottomOf="@+id/classic_anim_button" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

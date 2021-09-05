@@ -47,6 +47,9 @@ class MainActivity: AppCompatActivity() {
 			ButtonType.CLASSIC->{
 				MainPageFragmentDirections.actionMainPageFragmentToClassicAnimationsFragment()
 			}
+			ButtonType.RESOURCES->{
+				MainPageFragmentDirections.actionMainPageFragmentToResourceAnimFragment()
+			}
 		}
 		action.let {
 			navController.navigate(action)

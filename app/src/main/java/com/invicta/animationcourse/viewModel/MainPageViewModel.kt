@@ -20,5 +20,11 @@ class MainPageViewModel : ViewModel() {
 		buttonTypeClicked.value = ButtonType.CLASSIC
 	}
 	
+	fun onResourcesAnimationsButtonClicked(){
+		buttonTypeClicked.value = ButtonType.RESOURCES
+	}
+	
+	
+	
 	
 }
