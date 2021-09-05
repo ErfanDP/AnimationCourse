@@ -35,5 +35,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraint_sets_button"
             android:onClick="@{() -> viewModel.onPlaceHolderButtonClicked()}"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/classic_animation"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/place_holder_button"
+            app:layout_constraintStart_toStartOf="@+id/place_holder_button"
+            app:layout_constraintTop_toBottomOf="@+id/place_holder_button"
+            android:onClick="@{() -> viewModel.onClassicAnimationsButtonClicked()}"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

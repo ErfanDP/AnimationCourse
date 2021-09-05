@@ -15,4 +15,10 @@ class MainPageViewModel : ViewModel() {
 	fun onConstrainSetButtonClicked(){
 		buttonTypeClicked.value = ButtonType.CONSTRAINT_SET
 	}
+	
+	fun onClassicAnimationsButtonClicked(){
+		buttonTypeClicked.value = ButtonType.CLASSIC
+	}
+	
+	
 }

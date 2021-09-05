@@ -44,6 +44,9 @@ class MainActivity: AppCompatActivity() {
 			ButtonType.PLACEHOLDER -> {
 				MainPageFragmentDirections.actionMainPageFragmentToPlaceHolderAnimFragment()
 			}
+			ButtonType.CLASSIC->{
+				MainPageFragmentDirections.actionMainPageFragmentToClassicAnimationsFragment()
+			}
 		}
 		action.let {
 			navController.navigate(action)

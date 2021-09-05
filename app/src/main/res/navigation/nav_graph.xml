@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_mainPageFragment_to_constraintSetsAnimFragment"
             app:destination="@id/constraintSetsFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_classicAnimationsFragment"
+            app:destination="@id/classicAnimationsFragment" />
     </fragment>
     <fragment
         android:id="@+id/placeHolderAnimFragment"
@@ -26,4 +29,9 @@
         android:name="com.invicta.animationcourse.view.fragments.ConstraintSetsAnimFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank_anim" />
+    <fragment
+        android:id="@+id/classicAnimationsFragment"
+        android:name="com.invicta.animationcourse.view.fragments.ClassicAnimationsFragment"
+        android:label="fragment_classic_animations"
+        tools:layout="@layout/fragment_classic_animations" />
 </navigation>
