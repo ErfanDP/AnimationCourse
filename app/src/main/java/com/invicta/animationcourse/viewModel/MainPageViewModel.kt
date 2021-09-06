@@ -24,6 +24,9 @@ class MainPageViewModel : ViewModel() {
 		buttonTypeClicked.value = ButtonType.RESOURCES
 	}
 	
+	fun onBackGroundAnimationButtonClicked(){
+		buttonTypeClicked.value = ButtonType.BACKGROUND
+	}
 	
 	
 	

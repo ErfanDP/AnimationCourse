@@ -7,4 +7,8 @@
     <string name="classic_animation">Classic Animation</string>
     <string name="hallo">HALLO</string>
     <string name="res_button">ResButton</string>
+    <string name="frame_by_frame_animation_text">This is a frame by frame animation</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="background_animation">Background Animation</string>
 </resources>

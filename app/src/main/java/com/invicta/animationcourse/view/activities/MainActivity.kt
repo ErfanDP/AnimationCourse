@@ -50,6 +50,9 @@ class MainActivity: AppCompatActivity() {
 			ButtonType.RESOURCES->{
 				MainPageFragmentDirections.actionMainPageFragmentToResourceAnimFragment()
 			}
+			ButtonType.BACKGROUND->{
+				MainPageFragmentDirections.actionMainPageFragmentToBackgroundAnimationFragment()
+			}
 		}
 		action.let {
 			navController.navigate(action)
