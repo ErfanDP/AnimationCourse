@@ -12,4 +12,6 @@
     <string name="stop">Stop</string>
     <string name="background_animation">Background Animation</string>
     <string name="list_effects">List Effects</string>
+    <string name="object_animator">Object Animator</string>
+    <string name="click_me">Click ME</string>
 </resources>

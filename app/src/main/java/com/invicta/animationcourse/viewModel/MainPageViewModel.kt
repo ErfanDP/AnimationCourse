@@ -31,6 +31,8 @@ class MainPageViewModel : ViewModel() {
 		buttonTypeClicked.value = ButtonType.LIST_EFFECTS
 	}
 	
-	
+	fun onObjectAnimatorButtonClicked(){
+		buttonTypeClicked.value = ButtonType.OBJECT_ANIMATOR
+	}
 	
 }

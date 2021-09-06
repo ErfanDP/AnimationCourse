@@ -35,6 +35,9 @@
         <action
             android:id="@+id/action_mainPageFragment_to_listEffectsFragment"
             app:destination="@id/listEffectsFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_objectAnimatorFragment"
+            app:destination="@id/objectAnimatorFragment" />
     </fragment>
     <fragment
         android:id="@+id/placeHolderAnimFragment"
@@ -64,4 +67,9 @@
         android:name="com.invicta.animationcourse.view.fragments.ListEffectsFragment"
         android:label="fragment_list_effects"
         tools:layout="@layout/fragment_list_effects" />
+    <fragment
+        android:id="@+id/objectAnimatorFragment"
+        android:name="com.invicta.animationcourse.view.fragments.ObjectAnimatorFragment"
+        android:label="fragment_object_animator"
+        tools:layout="@layout/fragment_object_animator" />
 </navigation>

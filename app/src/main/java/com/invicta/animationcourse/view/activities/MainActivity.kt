@@ -49,6 +49,9 @@ class MainActivity: AppCompatActivity() {
 			ButtonType.LIST_EFFECTS->{
 				MainPageFragmentDirections.actionMainPageFragmentToListEffectsFragment()
 			}
+			ButtonType.OBJECT_ANIMATOR->{
+				MainPageFragmentDirections.actionMainPageFragmentToObjectAnimatorFragment()
+			}
 		}
 		action.let {
 			navController.navigate(action)
