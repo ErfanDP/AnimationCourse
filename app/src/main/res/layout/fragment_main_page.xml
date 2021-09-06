@@ -74,6 +74,17 @@
             app:layout_constraintStart_toStartOf="@+id/res_anim_button"
             app:layout_constraintTop_toBottomOf="@+id/res_anim_button" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="@{()-> viewModel.onListEffectsButtonClicked()}"
+            android:text="@string/list_effects"
+            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

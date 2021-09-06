@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.invicta.animationcourse.viewModel.ItemListViewModel" />
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+        <EditText
+            android:id="@+id/list_text"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@{viewModel.getItemText(position)}"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/background_selector"/>
+</layout>

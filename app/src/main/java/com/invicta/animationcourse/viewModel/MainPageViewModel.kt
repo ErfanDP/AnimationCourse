@@ -1,6 +1,5 @@
 package com.invicta.animationcourse.viewModel
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.invicta.animationcourse.data.ButtonType
 import com.invicta.animationcourse.utils.SingleLiveData
@@ -26,6 +25,10 @@ class MainPageViewModel : ViewModel() {
 	
 	fun onBackGroundAnimationButtonClicked(){
 		buttonTypeClicked.value = ButtonType.BACKGROUND
+	}
+	
+	fun onListEffectsButtonClicked(){
+		buttonTypeClicked.value = ButtonType.LIST_EFFECTS
 	}
 	
 	
